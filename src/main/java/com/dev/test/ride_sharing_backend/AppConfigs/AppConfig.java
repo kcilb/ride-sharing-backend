@@ -12,4 +12,8 @@ public class AppConfig {
     public String keyAlias;
     public String keyPassword;
     public String keyPassphrase;
+
+
+    public String mapAPI;
+    public String mapAPIKey;
 }
