@@ -16,6 +16,6 @@ public class ExternalController {
 
     @PostMapping(value = "find-location",produces = "application/json")
     public ResponseEntity<?> findLocation(@RequestBody UserDTO request) {
-        return ResponseEntity.ok(externalService.findLocation(request));
+        return ResponseEntity.ok(externalService.findLocation(request).block());
     }
 }
