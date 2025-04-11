@@ -20,8 +20,8 @@ public class MatchingController {
     }
 
     @GetMapping(value = "/drivers", produces = "application/json")
-    public ResponseEntity<?> drivers() {
-        return ResponseEntity.ok(matchingService.drivers());
+    public ResponseEntity<?> drivers(@RequestBody RideDTO request) {
+        return ResponseEntity.ok(matchingService.drivers(request));
     }
 
     @GetMapping(value = "/ride-status", produces = "application/json")

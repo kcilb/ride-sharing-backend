@@ -30,8 +30,12 @@ dependencies {
 	implementation "com.github.vladimir-bukhtoyarov:bucket4j-core:7.6.1"
 	implementation "org.springframework.boot:spring-boot-starter-actuator:3.4.2"
 	implementation "io.micrometer:micrometer-registry-prometheus:1.14.5"
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.7.15'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.data:spring-data-redis:2.6.0'
 	implementation 'com.auth0:java-jwt:4.2.1'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.commons:commons-lang3'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
